@@ -3,21 +3,26 @@ bmi-calc
 
 A Body Mass Index calculator.
 
-# cli
+# example
 
-- Install [node](http://nodejs.org/download).
-- Run `npm install -g bmi-calc`
-- Run `bmi-calc --weight 170 --height 73`. (Except put in your weight and height.)
+```js
+var calcBmi = require('bmi-calc')
 
+// 154 lbs, 72 in, imperial
+console.log( calcBmi(154, 72, true) )
+// { value: 20.88, name: 'Normal' }
+
+// 69 kg, 1.62 m, metric
+console.log( calcBmi(69, 1.62, false) )
+// { value: 26.29, name: 'Overweight' }
+
+// 59 kg, 2 m, metric
+console.log( calcBmi(59, 2) )
+// { value: 14.75, name: 'Very Severely Underweight' }
 ```
-Usage: bmi-calc OPTIONS
+```
 
--h 64, --height=64    specify height in inches
--f 5, --feet=5        specify height in feet (can be used with -i)
--i 4, --inches=4      specify height in inches (can be used with -f)
--w 153, --weight=153  specify weight in pounds
--l 153, --lbs=153     specify weight in pounds
--p 153, --pounds=153  specify weight in pounds
+
 ```
 
 # api
@@ -41,6 +46,23 @@ var calcBmi = require('bmi-calc')
 - `value` is the bmi number, e.g. `21.36`
 - `name` is a human-readable string, e.g. `'severely underweight'`
 
+
+# cli
+
+- Install [node](http://nodejs.org/download).
+- Run `npm install -g bmi-calc`
+- Run `bmi-calc --weight 170 --height 73`. (Except put in your weight and height.)
+
+```
+Usage: bmi-calc OPTIONS
+
+-h 64, --height=64    specify height in inches
+-f 5, --feet=5        specify height in feet (can be used with -i)
+-i 4, --inches=4      specify height in inches (can be used with -f)
+-w 153, --weight=153  specify weight in pounds
+-l 153, --lbs=153     specify weight in pounds
+-p 153, --pounds=153  specify weight in pounds
+```
 
 # license
 
