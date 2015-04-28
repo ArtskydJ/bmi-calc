@@ -20,10 +20,6 @@ console.log( calcBmi(69, 1.62, false) )
 console.log( calcBmi(59, 2) )
 // { value: 14.75, name: 'Very Severely Underweight' }
 ```
-```
-
-
-```
 
 # api
 
