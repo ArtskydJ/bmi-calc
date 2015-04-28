@@ -1,31 +1,31 @@
 {
   "name": "bmi-calc",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "main": "./index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com"
   },
+  "bin": "cli.js",
   "description": "Calculates Body Mass Index",
   "keywords": [
     "object",
-	"equal",
+    "equal",
     "keys",
-	"properties"
+    "properties"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ArtskydJ/bmi-calc"
   },
   "devDependencies": {
-    "tap": "~0.4.8"
-  },
-  "directories": {
-    "test": "test"
+    "tape": "^4.0.0"
   },
   "scripts": {
-    "test": "tap ./test/*.js"
+    "test": "node test.js"
   },
   "dependencies": {
+    "array.prototype.find": "^1.0.0",
+    "minimist": "^1.1.1"
   }
 }
