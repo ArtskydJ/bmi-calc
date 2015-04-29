@@ -38,5 +38,5 @@ var bmi = calcBmi(w, h, imperial)
 console.log(
 	(!bmi || !bmi.value || args.help) ?
 		helpMessage :
-		'BMI: ' + bmi.value.toPrecision(3) + ', ' + bmi.name
+		bmi.value.toPrecision(3) + '\n' + bmi.name
 )
