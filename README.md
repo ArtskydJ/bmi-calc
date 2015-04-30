@@ -1,6 +1,8 @@
 bmi-calc
 ========
 
+[![Build Status](https://travis-ci.org/ArtskydJ/bmi-calc.svg)](https://travis-ci.org/ArtskydJ/bmi-calc)
+
 A Body Mass Index calculator.
 
 # example
