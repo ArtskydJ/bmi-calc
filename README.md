@@ -49,7 +49,7 @@ var calcBmi = require('bmi-calc')
 
 - Install [node](http://nodejs.org/download).
 - Run `npm install -g bmi-calc`
-- Run `bmi-calc --weight 170 --height 73`. (Except put in your weight and height.)
+- Run `bmi-calc --pounds 170 --inches 73`. (Except put in your weight and height.)
 
 ```
 Usage: bmi-calc OPTIONS
