@@ -9,6 +9,8 @@ var imperialHeight = (args.f || args.feet || 0) * 12 + (args.i || args.inches ||
 var metricHeight = (args.m || args.meters || 0) + (args.c || args.centimeters || 0) / 100
 var height = imperialHeight || metricHeight
 
+//console.log(imperialHeight, metricHeight)
+
 var bmi = calcBmi(weight, height, !!imperialHeight)
 
 if (!bmi || !bmi.value || args.help) {

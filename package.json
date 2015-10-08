@@ -8,6 +8,9 @@
   },
   "bin": "cli.js",
   "description": "Calculates Body Mass Index",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
   "keywords": [
     "object",
     "equal",
@@ -18,14 +21,11 @@
     "type": "git",
     "url": "https://github.com/ArtskydJ/bmi-calc"
   },
-  "devDependencies": {
-    "tape": "^4.0.0"
-  },
-  "scripts": {
-    "test": "node test.js"
-  },
   "dependencies": {
     "array.prototype.find": "^1.0.0",
     "minimist": "^1.1.1"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
   }
 }
